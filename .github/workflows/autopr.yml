@@ -1,0 +1,18 @@
+on:
+  push:
+    branches:
+    - feature-1
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: pull-request
+      uses: repo-sync/pull-request@v2
+      with:
+        destination_branch: "main"
+        pr_title: "Pull Request 12"
+        pr_body: "I want to merge from feature branch to main"
+        pr_reviewer: "YAbdul"
+        
