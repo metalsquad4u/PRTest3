@@ -11,8 +11,13 @@ jobs:
     - name: pull-request
       uses: repo-sync/pull-request@v2
       with:
+        source_branch: ""                                 # If blank, default: triggered branch
         destination_branch: "main"
-        pr_title: "Pull Request 12"
+        pr_title: "IN-424: Extend OracleEC2 Volume to 100GB. From ${{ github.ref }}"
         pr_body: "I want to merge from feature branch to main"
-        pr_reviewer: "YAbdul"
+        pr_reviewer: "YAbdul,sulazhy"                             # Comma-separated list (no spaces)
+        pr_assignee: "sulazhy"                         # Comma-separated list (no spaces)
+        pr_label: "oracle"                               # Comma-separated list (no spaces)
+        #pr_milestone: "Milestone 1"                       # Milestone name
+        
         
