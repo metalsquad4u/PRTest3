@@ -1,13 +1,13 @@
 on:
   push:
     branches:
-    - feature-1
+    - dev
 
 jobs:
   pull-request:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.3.4
+    - uses: actions/checkout@v3
     - name: pull-request
       uses: repo-sync/pull-request@v2
       with:
