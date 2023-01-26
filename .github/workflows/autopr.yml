@@ -19,5 +19,3 @@ jobs:
         pr_assignee: "YAbdul"                         # Comma-separated list (no spaces)
         pr_label: "oracle 2"                               # Comma-separated list (no spaces)
         #pr_milestone: "Milestone 1"                       # Milestone name
-        
-        
